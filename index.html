@@ -1,491 +1,770 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="eng">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
+		<title>Kinnohasu Restaurant</title>
+		<link rel="shortcut icon" href="img/favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap"
+		/>
+		<link rel="stylesheet" href="css/plugins.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="manifest" href="/manifest.json" />
+        <script src="https://kit.fontawesome.com/69d97d75ac.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- Preloader -->
+		<div class="preloader-bg"></div>
+		<div id="preloader">
+			<div id="preloader-status">
+				<div class="preloader-position loader"><span></span></div>
+			</div>
+		</div>
+		<!-- Progress scroll totop -->
+		<div class="progress-wrap cursor-pointer">
+			<svg
+				class="progress-circle svg-content"
+				width="100%"
+				height="100%"
+				viewBox="-1 -1 102 102"
+			>
+				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+			</svg>
+		</div>
+		<!-- Menu -->
+		<div class="cappa-wrap">
+			<div class="cappa-wrap-inner">
+				<nav class="cappa-menu">
+					<ul>
+						<li><a class="active" href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Menu</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="cappa-menu-footer">
+					<div class="reservation">
+						<a href="tel:0943865757">
+							<div
+								class="icon d-flex justify-content-center align-items-center"
+							>
+								<i class="flaticon-call"></i>
+							</div>
+							<div class="call">Reservation<br/><span>0943 86 5757</span></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Logo & Menu Burger -->
+		<header class="cappa-header">
+			<div class="container">
+				<div class="row align-items-center">
+					<!-- Logo -->
+					<div class="col-6 col-md-6 cappa-logo-wrap">
+						<a href="index.html" class="cappa-logo"
+							><img src="img/logo.png" alt=""
+						/></a>
+					</div>
+					<!-- Menu Burger -->
+					<div class="col-6 col-md-6 text-right cappa-wrap-burger-wrap">
+						<a href="#" class="cappa-nav-toggle cappa-js-cappa-nav-toggle"
+							><i></i
+						></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Slider -->
+		<header class="header slider-fade" id="home">
+			<div class="owl-carousel owl-theme">
+				<!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+				<div
+					class="text-center item bg-img"
+					data-overlay-dark="6"
+					data-background="img/slider/2.jpg"
+				>
+					<div class="v-middle caption">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-10 offset-md-1">
+									<span>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+									</span>
+									<h4>Kinnohasu Japanese Restaurant</h4>
+									<h1>Enjoy a Luxury Experience</h1>
+									<div class="butn-light mt-30 mb-30">
+										<a href="tel:0943865757"><span>Book now</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="text-center item bg-img"
+					data-overlay-dark="6"
+					data-background="img/slider/3.jpg"
+				>
+					<div class="v-middle caption">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-10 offset-md-1">
+									<span>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+									</span>
+									<h4>Unique Place to Enjoy</h4>
+									<h1>The Perfect Base For You</h1>
+									<div class="butn-light mt-30 mb-30">
+										<a href="#contact"><span>Book now</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="text-center item bg-img"
+					data-overlay-dark="6"
+					data-background="img/slider/1.jpg"
+				>
+					<div class="v-middle caption">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-10 offset-md-1">
+									<span>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+										<i class="star-rating"></i>
+									</span>
+									<h4>The Ultimate Luxury Experience</h4>
+									<h1>Enjoy The Best Services</h1>
+									<div class="butn-light mt-30 mb-30">
+										<a href="#contact"><span>Book now</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="about" style="margin-bottom: 100px"></div>
+		<!-- About -->
+		<section class="about section-padding">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-md-6 mb-30 animate-box"
+						data-animate-effect="fadeInUp"
+					>
+						<span>
+							<i class="star-rating"></i>
+							<i class="star-rating"></i>
+							<i class="star-rating"></i>
+							<i class="star-rating"></i>
+							<i class="star-rating"></i>
+						</span>
+						<div class="section-subtitle">Kinnohasu Restaurant</div>
+						<div class="section-title">About us</div>
+						<p>
+							Welcome to the best Japanese Restaurant in K-Town
+						</p>
+						<p>Checkin to get vouchers.</p>
+						<p>7 days open!</p>
+						<!-- call -->
+						<div class="reservations">
+							<div class="icon"><span class="flaticon-call"></span></div>
+							<div class="text">
+								<p>Reservation</p>
+								<a href="tel:0943865757">0943 86 5757</a><br/>
+							</div>
+						</div>
+					</div>
+					<div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
+						<img src="img/rooms/8.jpg" alt="" class="mt-90 mb-30" />
+					</div>
+					<div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
+						<img src="img/rooms/2.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Rooms -->
+		<div id="services" style="margin-bottom: 100px"></div>
+		<section class="rooms1 section-padding bg-cream" data-scroll-index="1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-subtitle">Kinnohasu Restaurant</div>
+						<div class="section-title">Menu</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="item">
+							<div class="position-re o-hidden">
+								<img src="img/rooms/2.jpg" alt="" />
+							</div>
+							<div class="con">
+								<h6><a>From $38</a></h6>
+								<h5><a href="#gallery">Manicure</a></h5>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<div class="position-re o-hidden">
+								<img src="img/rooms/3.jpg" alt="" />
+							</div>
+							<div class="con">
+								<h6><a>From $49</a></h6>
+								<h5><a href="#spa-scroll">Spa Pedicure</a></h5>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<div class="position-re o-hidden">
+								<img src="img/rooms/9.jpg" alt="" />
+							</div>
+							<div class="con">
+								<h6><a>From $61</a></h6>
+								<h5><a href="#artificial-gel">Artificial Gel</a></h5>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
 
-<head>
-    <title>Umenohana</title>
-    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-    <meta content="" name="author" />
-    <!-- CSS Files
-    ================================================== -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap" />
-    <link href="css/mdb.min.css" rel="stylesheet" type="text/css" id="mdb" />
-    <link href="css/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/coloring.css" rel="stylesheet" type="text/css" />
-    <!-- color scheme -->
-    <link href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" id="colors" />
-</head>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="item">
+							<div class="position-re o-hidden">
+								<img src="img/rooms/4.jpg" alt="" />
+							</div>
+							<div class="con">
+								<h6><a>From $54</a></h6>
+								<h5><a href="#poslish-nail">Gel Polish Nails</a></h5>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item">
+							<div class="position-re o-hidden">
+								<img src="img/rooms/5.jpg" alt="" />
+							</div>
+							<div class="con">
+								<h6><a>From $51</a></h6>
+								<h5><a href="#artificial-acrylic">Artificial Acrylic</a></h5>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="item">
+							<div class="position-re o-hidden">
+								<img src="img/rooms/6.jpg" alt="" />
+							</div>
+							<div class="con">
+								<h6><a>From $80</a></h6>
+								<h5><a href="#gel-x">Gel X Extentions</a></h5>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="item">
+							<div class="position-re o-hidden">
+								<img src="img/rooms/7.jpg" alt="" />
+							</div>
+							<div class="con">
+								<h6><a>From $61</a></h6>
+								<h5><a href="#gallery">Infill</a></h5>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="item">
+							<div class="position-re o-hidden">
+								<img src="img/rooms/8.jpg" alt="" />
+							</div>
+							<div class="con">
+								<h6><a>From $61</a></h6>
+								<h5><a href="#dipping-powder">Dipping Powder</a></h5>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="item">
+							<div class="position-re o-hidden">
+								<img src="img/rooms/1.jpg" alt="" />
+							</div>
+							<div class="con">
+								<h6><a>From $16</a></h6>
+								<h5><a href="#gallery">Waxing</a></h5>
+								<div class="line"></div>
+							</div>
+						</div>
+					</div>
 
-<body class="dark-scheme">
-    <div id="wrapper">
-        <div id="preloader">
-            <div class="preloader1"></div>
-        </div>
-        <!-- header begin -->
-        <header class="transparent">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="de-flex sm-pt10">
-                            <div class="de-flex-col">
-                                <div class="de-flex-col">
-                                    <!-- logo begin -->
-                                    <div id="logo">
-                                        <a href="index.html">
-                                            <img alt="" src="images/logo.png" />
-                                        </a>
-                                    </div>
-                                    <!-- logo close -->
-                                </div>
-                                <div class="de-flex-col">
-                                </div>
-                            </div>
-                            <div class="de-flex-col header-col-mid">
-                                <!-- mainmenu -->
-                                <ul id="mainmenu">
-                                    <li><a href="index.html">Trang chủ</a></li>
-                                    <li><a href="menu.html">Menu</a></li>
-                                    <li><a href="reservation.html">Đặt bàn</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="contact.html">Liên hệ</a></li>
-                                </ul>
-                                <!-- mainmenu -->
-                            </div>
-                            <div class="de-flex-col">
-                                <div class="menu_side_area">
-                                    <a href="reservation.html" class="btn-main sm-hide">Đặt bàn</a>
-                                    <span id="menu-btn"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- header close -->
-        <!-- content begin -->
-        <div class="no-bottom no-top" id="content">
-            <div id="top"></div>
-            <!-- Carousel wrapper -->
-            <section id="de-carousel" class="no-top no-bottom carousel slide carousel-slide" data-mdb-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-mdb-target="#de-carousel" data-mdb-slide-to="0" class="active"></li>
-                    <li data-mdb-target="#de-carousel" data-mdb-slide-to="1"></li>
-                    <li data-mdb-target="#de-carousel" data-mdb-slide-to="2"></li>
-                </ol>
-                <!-- Inner -->
-                <div class="carousel-inner">
-                    <!-- carousel item -->
-                    <div class="carousel-item active" data-bgimage="url(images/slider/4.jpg)">
-                        <div class="mask">
-                            <div class="d-flex justify-content-center align-items-center h-100">
-                                <div class="container text-white">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6 offset-lg-1 mb-sm-30">
-                                            <h3 class="id-color wow fadeInUp " data-wow-delay=".3s">Our Specials</h3>
-                                            <h1 class="s1 wow fadeInUp" data-wow-delay=".6s">Premiun Authentic Coffee</h1>
-                                            <a href="#section-artists" class="btn-border wow fadeInUp" data-wow-delay="1.1s">Explore Menu</a>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <p class="wow fadeInRight" data-wow-delay="1s">Stradale is a exclusive website template specially made for Cafe and Coffe Shops. Made using only the finest coding dan design practices. Get Stradale now!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- carousel item -->
-                    <!-- carousel item -->
-                    <div class="carousel-item" data-bgimage="url(images/slider/5.jpg)">
-                        <div class="mask">
-                            <div class="d-flex justify-content-center align-items-center h-100">
-                                <div class="container text-white">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6 offset-lg-1 mb-sm-30">
-                                            <h3 class="id-color wow fadeInUp " data-wow-delay=".3s">Fresh Bean</h3>
-                                            <h1 class="s1 wow fadeInUp" data-wow-delay=".6s">For Great Coffee Taste</h1>
-                                            <a href="#section-artists" class="btn-border wow fadeInUp" data-wow-delay="1.1s">Explore Menu</a>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <p class="wow fadeInRight" data-wow-delay="1s">Stradale is a exclusive website template specially made for Cafe and Coffe Shops. Made using only the finest coding dan design practices. Get Stradale now!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- carousel item -->
-                </div>
-                <!-- Inner -->
-                <!-- Controls -->
-                <a class="carousel-control-prev" href="#de-carousel" role="button" data-mdb-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#de-carousel" role="button" data-mdb-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+				</div>
+			</div>
+		</section>
+		<!-- Testiominals -->
+		<section class="testimonials">
+			<div
+				class="background bg-img bg-fixed section-padding pb-0"
+				data-background="img/slider/2.jpg"
+				data-overlay-dark="3"
+			>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<div class="testimonials-box">
+								<div class="head-box">
+									<h6>Testimonials</h6>
+									<h4>What Client's Say?</h4>
+									<div class="line"></div>
+								</div>
+								<div class="owl-carousel owl-theme">
+									<div class="item">
+										<span class="quote"><img src="img/quot.png" alt="" /></span>
+										<p>
+											Kinnohasu Restaurant offers an exquisite culinary experience like no other. From the moment we stepped in, we were enveloped by its charming ambiance. The impeccable service matched the delectable dishes they served. Each bite was a journey through delicate flavors and masterful presentation. We highly recommend Kinnohasu for anyone seeking a taste of culinary perfection.
+										</p>
+										<div class="info">
+											<div class="author-img">
+												<img src="img/team/4.jpg" alt="" />
+											</div>
+											<div class="cont">
+												<span
+													><i class="star-rating"></i><i class="star-rating"></i
+													><i class="star-rating"></i><i class="star-rating"></i
+													><i class="star-rating"></i
+												></span>
+												<h6>Emily Brown</h6>
+												<span>Guest review</span>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<span class="quote"><img src="img/quot.png" alt="" /></span>
+										<p>
+											Kinnohasu Restaurant surpassed all expectations with its exquisite blend of flavors and impeccable service. From the moment we arrived, the staff made us feel like honored guests. The menu boasted a diverse selection of dishes, each crafted with precision and bursting with freshness. Whether you're a seasoned food enthusiast or simply seeking a memorable dining experience, Kinnohasu Restaurant is an absolute must-visit.
+										</p>
+										<div class="info">
+											<div class="author-img">
+												<img src="img/team/1.jpg" alt="" />
+											</div>
+											<div class="cont">
+												<span
+													><i class="star-rating"></i><i class="star-rating"></i
+													><i class="star-rating"></i><i class="star-rating"></i
+													><i class="star-rating"></i
+												></span>
+												<h6>Mary White</h6>
+												<span>Guest review</span>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<span class="quote"><img src="img/quot.png" alt="" /></span>
+										<p>
+											At Kinnohasu Restaurant, every visit feels like a culinary journey to Japan's heart. From the moment we entered, we were greeted with warmth and elegance. The attention to detail in every dish reflected the chef's dedication to authenticity and quality. Whether you're a sushi aficionado or craving traditional Japanese cuisine, Kinnohasu delivers an unforgettable dining experience. It's a gem worth revisiting time and time again.
+										</p>
+										<div class="info">
+											<div class="author-img">
+												<img src="img/team/5.jpg" alt="" />
+											</div>
+											<div class="cont">
+												<span
+													><i class="star-rating"></i><i class="star-rating"></i
+													><i class="star-rating"></i><i class="star-rating"></i
+													><i class="star-rating"></i
+												></span>
+												<h6>Olivia Martin</h6>
+												<span>Guest review</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Services -->
+		<div id="gallery" style="margin-bottom: 100px"></div>
 
-                <a href="#section-welcome" class="mouse-icon-click scroll-to wow fadeInUp" data-wow-delay="2s">
-                    <span class="mouse fadeScroll relative" data-scroll-speed="2">
-                        <span class="scroll"></span>
-                    </span>
-                </a>
-            </section>
-            <!-- Carousel wrapper -->
-            <section id="section-welcome" aria-label="section">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 text-center">
-                            <div class="de-title">
-                                <h5 class="s1 wow fadeInUp" data-wow-delay=".5s"><span class="id-color-2">This is</span></h5>
-                                <h2 class="wow fadeInUp" data-wow-delay=".75s">Our Story</h2>
-                            </div>
-                            <p class="wow fadeInUp" data-wow-delay="1s">Lorem ipsum aute enim pariatur ea culpa nulla ut laborum sint nisi laborum culpa ea enim do qui ea deserunt amet proident cillum tempor fugiat magna aliquip sed cillum ullamco sit adipisicing ut velit nulla aliqua.</p>
-                        </div>
+		<section class="services section-padding">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-md-6 p-0 animate-box"
+						data-animate-effect="fadeInLeft"
+					>
+						<div class="img left">
+							<a><img src="img/restaurant/1.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div
+						class="col-md-6 p-0 bg-cream valign animate-box"
+						data-animate-effect="fadeInRight"
+					>
+						<div class="content">
+							<div class="cont text-left">
+								<div class="info">
+									<h6>Discover</h6>
+								</div>
+								<h4 id="spa-scroll">Manicure</h4>
+								<p>
+									A manicure treatment is not only a treatment for
+									natural nails but also for the hands. A manicure
+									consists of filing, shaping of the nail, cuticle treatment,
+									massaging of hands and application of nail polish.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div
+						class="col-md-6 bg-cream p-0 order2 valign animate-box"
+						data-animate-effect="fadeInLeft"
+					>
+						<div class="content">
+							<div class="cont text-left">
+								<div class="info">
+									<h6>DISCOVER</h6>
+								</div>
+								<h4 id="poslish-nail">Spa Pedicure</h4>
+								<p>
+									A pedicure is a way to improve appearance of the feet
+									and nails. It provides a similar service to a manicure.
+									Additionally, our spa pedicure is the ultimate in full
+									body relaxation. Your feet are soaked in a whirlpool
+									while you recline in a massage chair which massages
+									your entire body. Leg care below the knee has
+									become a common and now expected service which
+									includes removal of dead skin cells on the bottom of
+									feet, exfoliation, leg massage with moisturising cream
+									and application of nail polish
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-md-6 p-0 order1 animate-box"
+						data-animate-effect="fadeInRight"
+					>
+						<div class="img">
+							<a><img src="img/rooms/5.jpg" alt="" /></a>
+						</div>
+					</div>
+				</div>
 
-                        <div class="col-md-6">
-                            <div class="p-4">
-                                <div class="row g-4">
-                                    <!-- gallery item begin -->
-                                    <div class="col-md-6">
-                                        <div class="de-image-hover">
-                                            <a href="images/gallery/1.jpg" class="image-popup">
-                                                <span class="dih-title-wrap">
-                                                    <span class="dih-title">Fresh Ingredients</span>
-                                                    <span class="dih-wm">01</span>
-                                                </span>
-                                                <span class="dih-overlay"></span>
-                                                <img src="images/gallery/1.jpg" class="lazy img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- gallery item close -->
-                                    <!-- gallery item begin -->
-                                    <div class="col-md-6">
-                                        <div class="de-image-hover">
-                                            <a href="images/gallery/2.jpg" class="image-popup">
-                                                <span class="dih-title-wrap">
-                                                    <span class="dih-title">Authentic Taste</span>
-                                                    <span class="dih-wm">02</span>
-                                                </span>
-                                                <span class="dih-overlay"></span>
-                                                <img src="images/gallery/2.jpg" class="lazy img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- gallery item close -->
-                                    <!-- gallery item begin -->
-                                    <div class="col-md-6">
-                                        <div class="de-image-hover">
-                                            <a href="images/gallery/3.jpg" class="image-popup">
-                                                <span class="dih-title-wrap">
-                                                    <span class="dih-title">Cozy Atmosphere</span>
-                                                    <span class="dih-wm">03</span>
-                                                </span>
-                                                <span class="dih-overlay"></span>
-                                                <img src="images/gallery/3.jpg" class="lazy img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- gallery item close -->
-                                    <!-- gallery item begin -->
-                                    <div class="col-md-6">
-                                        <div class="de-image-hover">
-                                            <a href="images/gallery/4.jpg" class="image-popup">
-                                                <span class="dih-title-wrap">
-                                                    <span class="dih-title">Live Music</span>
-                                                    <span class="dih-wm">04</span>
-                                                </span>
-                                                <span class="dih-overlay"></span>
-                                                <img src="images/gallery/4.jpg" class="lazy img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- gallery item close -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="section-specials" class="jarallax" aria-label="section">
-                <img class="jarallax-img" src="images/background/7.jpg" alt="" />
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-4 offset-md-1 text-center">
-                            <div class="de-title">
-                                <h5 class="s1 wow fadeInUp" data-wow-delay=".5s"><span class="id-color-2">Specials</span></h5>
-                                <h2 class="wow fadeInUp" data-wow-delay=".75s">Of The Day</h2>
-                            </div>
-                            <div class="wow fadeInUp" data-wow-delay="1s">
-                                <h3>Classic Cappuccino </h3>
-                                <p>Composed of a single espresso shot and hot milk, with the surface topped with foamed milk. Prepared with an espresso machine.</p>
-                                <a href="menu.html" class="btn-border wow fadeInUp" data-wow-delay="1.1s">View All Menu</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 offset-md-1">
-                            <div class="image-with-counter">
-                                <img class="img-1 img-fluid wow zoomIn" src="images/misc/1.png" alt="">
-                                <div class="div-1 wow zoomIn" data-wow-delay=".5s">
-                                    <div class="de_count">
-                                    <h3><span class="timer" data-to="600" data-speed="3000">0</span></h3>
-                                    <h5 class="id-color">Sold Today</h5>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="section-location" aria-label="section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4 mb-sm-30 text-center">
-                                <i class="icon_pin_alt fontsize48 id-color mb20"></i>
-                                <h3>Location</h3>
-                                08 W 36th St, New York, NY 10001
-                            </div>
+				<div class="row">
+					<div
+						class="col-md-6 p-0 animate-box"
+						data-animate-effect="fadeInLeft"
+					>
+						<div class="img left">
+							<a><img src="img/rooms/4.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div
+						class="col-md-6 p-0 bg-cream valign animate-box"
+						data-animate-effect="fadeInRight"
+					>
+						<div class="content">
+							<div class="cont text-left">
+								<div class="info">
+									<h6>DISCOVER</h6>
+								</div>
+								<h4 id="dipping-powder">Gel Polish Nails</h4>
+								<p>
+									GEL Polish is for people who want to maintain natural
+									nails. The formulation looks good from day 1 to day
+									14, but does not appear to damage nail beds. The
+									product is thin and strong enough to be applied
+									similarly to nail polish, but it is cured in a way that
+									gives it great flexibility and durability. It also has the
+									incredible shine associated only with gel nails.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div
+						class="col-md-6 bg-cream p-0 order2 valign animate-box"
+						data-animate-effect="fadeInLeft"
+					>
+						<div class="content">
+							<div class="cont text-left">
+								<div class="info">
+									<h6>DISCOVER</h6>
+								</div>
+								<h4 id="artificial-acrylic">Dipping Powder</h4>
+								<p>
+									Dip powder nail are somewhere between a regular
+									mani and a fake nail. Instead of using UV rays to seal in
+									your polish, the color comes from a pigmented powder.
+									Between base coats and a sealant, you dip your nails
+									into a little jar of your chosen color ( SNS, Prodip are
+									the two most popular and vetted manufacturers) for a
+									manicure that could last three to four weeks.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-md-6 p-0 order1 animate-box"
+						data-animate-effect="fadeInRight"
+					>
+						<div class="img">
+							<a><img src="img/rooms/8.jpg" alt="" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div
+						class="col-md-6 p-0 animate-box"
+						data-animate-effect="fadeInLeft"
+					>
+						<div class="img left">
+							<a><img src="img/rooms/5.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div
+						class="col-md-6 p-0 bg-cream valign animate-box"
+						data-animate-effect="fadeInRight"
+					>
+						<div class="content">
+							<div class="cont text-left">
+								<div class="info">
+									<h6>DISCOVER</h6>
+								</div>
+								<h4 id="artificial-gel">Artificial Acrylic</h4>
+								<p>
+									Tips are glued on the end of your natural nails making
+									them look longer (length of your choice). Then acrylic
+									nails are made by mixing a high quality acrylic powder
+									with liquid, they are placed over the top of your nails
+									properly to make them look thin and natural. They are
+									also long lasting and durable.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div
+						class="col-md-6 bg-cream p-0 order2 valign animate-box"
+						data-animate-effect="fadeInLeft"
+					>
+						<div class="content">
+							<div class="cont text-left">
+								<div class="info">
+									<h6>DISCOVER</h6>
+								</div>
+								<h4 id="gel-x">Artificial Gel</h4>
+								<p>
+									Gel nails are for those people who are sensitive to
+									acrylic powder and don’t wish to colour or polish their
+									nails. Gel nails give customers a natural look and give
+									them durability equal to acrylic nails.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-md-6 p-0 order1 animate-box"
+						data-animate-effect="fadeInRight"
+					>
+						<div class="img">
+							<a><img src="img/rooms/9.jpg" alt="" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div
+						class="col-md-6 p-0 animate-box"
+						data-animate-effect="fadeInLeft"
+					>
+						<div class="img left">
+							<a><img src="img/rooms/6.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div
+						class="col-md-6 p-0 bg-cream valign animate-box"
+						data-animate-effect="fadeInRight"
+					>
+						<div class="content">
+							<div class="cont text-left">
+								<div class="info">
+									<h6>DISCOVER</h6>
+								</div>
+								<h4>Gel X Extentions</h4>
+								<p>
+									Gel-X extensions have the malleability of a soft gel polish and the length of a press-on or glue-on nail.
+									The extension is made out of gel polish which is applied directly on top of your full natural nail and can be cut and shaped to your preference.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="contact" style="margin-bottom: 100px"></div>
+		<section class="testimonials">
+			<div class="background bg-img bg-fixed section-padding pb-0" data-background="img/rooms/5.jpg" data-overlay-dark="2">
+					<div class="container">
+							<div class="row">
+									<!-- Reservation -->
+									<div class="col-md-5 mb-30 mt-30">
+											<p><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i></p>
+											<h5>Welcome to the best five-star Japanese Restaurant in K-Town Vinhomes Ocean Park 2. We offer
+												highest quality foods & services.</h5>
+											<div class="reservations mb-30">
+													<div class="icon color-1"><span class="flaticon-call"></span></div>
+													<div class="text">
+															<p class="color-1">Reservation</p>
+															<a class="color-1" href="tel:0943865757">0943 86 5757</a>
+																					
+													</div>
+											</div>
+									</div>
+									<!-- Booking From -->
+									<div class="col-md-5 offset-md-2">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.9866066155014!2d105.978566!3d20.953053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a50029a6fc0b%3A0x558612f590e3edb3!2zTmjDoCBow6BuZyBOaOG6rXQgQuG6o24gS2lubm9oYXN1!5e0!3m2!1sen!2s!4v1709480650700!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+							</div>
+					</div>
+			</div>
+	</section>
+		
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="footer-column footer-about">
+								<h3 class="footer-title">About Kinnohasu Restaurant</h3>
+								<p class="footer-about-text">
+									Welcome to the best five-star Japanese Restaurant in K-Town Vinhomes Ocean Park 2.
+								</p>
 
-                            <div class="col-md-4 mb-sm-30 text-center">
-                                <i class="icon_mug fontsize48 id-color mb20"></i>
-                                <h3>We're Open</h3>
-                                Weekdays 08:00 - 22:00. Weekends 08:00 - 24:00.
-                            </div>
+								<div class="footer-language">
+									<i class="lni ti-world"></i>
+									<select onchange="location = this.value;">
+										<option value="#0">English</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 offset-md-1">
+							<div class="footer-column footer-explore clearfix">
+								<h3 class="footer-title">Explore</h3>
+								<ul class="footer-explore-list list-unstyled">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#services">Services</a></li>
+									<li><a href="#gallery">Gallery</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="footer-column footer-contact">
+								<h3 class="footer-title">Contact</h3>
+								<p class="footer-contact-text">
+									<a href="https://maps.app.goo.gl/Y8GKGUToTrTE7MkL9" target="_blank">
+									PĐ.KT-57 Ktown, Vinhomes Ocean Park 2
+									<br />
+									Văn Giang, Hưng Yên
+								</a>
+								</p>
 
-                            <div class="col-md-4 mb-sm-30 text-center">
-                                <i class="icon_mail_alt fontsize48 id-color mb20"></i>
-                                <h3>Contact Us</h3>
-                                P: +1 333 1000 2000. E: contact@example.com.
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            <section id="section-blog" class="jarallax">
-                <img class="jarallax-img" src="images/background/8.jpg" alt="" />
-                <div class="container">
-                    <div class="row g-4 align-items-center">
-                            <div class="col-lg-4 col-md-6 text-center">
-                                <div class="de-title">
-                                    <h5 class="s1 wow fadeInUp" data-wow-delay=".5s"><span class="id-color-2">Latest</span></h5>
-                                    <h2 class="wow fadeInUp" data-wow-delay=".75s">Blog</h2>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4 col-md-6">
-                                <div class="d-items">
-                                   <div class="card-image-1 mod-b">
-                                       <a href="blog-single.html" class="d-text">
-                                           <div class="d-inner">
-                                                <span class="atr-date">Dec 10, 2021</span>
-                                                <h3>This Will Fundamentally Change the Way You Look at Coffee</h3>
-                                                <h5 class="d-tag">all about coffee</h5>
-                                            </div>
-                                       </a>
-                                       <img src="images/blog/1.jpg" class="img-fluid" alt="">
-                                   </div>
-                                </div>
-                            </div>
+								<p class="footer-contact-phone">
+									<a href="tel:0943865757"><span class="flaticon-call"></span>&nbsp;0943 86 5757</a>
+								</p>
 
-                            <div class="col-lg-4 col-md-6">
-                                <div class="d-items">
-                                   <div class="card-image-1 mod-b">
-                                       <a href="blog-single.html" class="d-text">
-                                           <div class="d-inner">
-                                                <span class="atr-date">Dec 10, 2021</span>
-                                                <h3>7 Cult-Favorite Coffee Products You Should Know</h3>
-                                                <h5 class="d-tag">all about coffee</h5>
-                                            </div>
-                                       </a>
-                                       <img src="images/blog/2.jpg" class="img-fluid" alt="">
-                                   </div>
-                                </div>
-                            </div>
 
-                            <div class="col-lg-4 col-md-6">
-                                <div class="d-items">
-                                   <div class="card-image-1 mod-b">
-                                       <a href="blog-single.html" class="d-text">
-                                           <div class="d-inner">
-                                                <span class="atr-date">Dec 10, 2021</span>
-                                                <h3>14 Unbelievable Things You Never Knew About Coffee</h3>
-                                                <h5 class="d-tag">all about coffee</h5>
-                                            </div>
-                                       </a>
-                                       <img src="images/blog/3.jpg" class="img-fluid" alt="">
-                                   </div>
-                                </div>
-                            </div>
+								<div class="footer-contact-info">
+									<p class="footer-contact-mail">support@kinnohasu.com</p>
 
-                            <div class="col-lg-4 col-md-6">
-                                <div class="d-items">
-                                   <div class="card-image-1 mod-b">
-                                       <a href="blog-single.html" class="d-text">
-                                           <div class="d-inner">
-                                                <span class="atr-date">Dec 10, 2021</span>
-                                                <h3>The Best Type of Coffee for Every Zodiac Sign</h3>
-                                                <h5 class="d-tag">all about coffee</h5>
-                                            </div>
-                                       </a>
-                                       <img src="images/blog/4.jpg" class="img-fluid" alt="">
-                                   </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="d-items">
-                                   <div class="card-image-1 mod-b">
-                                       <a href="blog-single.html" class="d-text">
-                                           <div class="d-inner">
-                                                <span class="atr-date">Dec 10, 2021</span>
-                                                <h3>Some Feel-Good News About Coffee to Brighten Your Day</h3>
-                                                <h5 class="d-tag">all about coffee</h5>
-                                            </div>
-                                       </a>
-                                       <img src="images/blog/5.jpg" class="img-fluid" alt="">
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="section-menu-title-2s" aria-label="section">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 offset-md-3 text-center">
-                                <blockquote class="wow fadeInUp" data-wow-delay=".5s">
-                                    It’s amazing how the world begins to change through the eyes of a cup of coffee.<span>Donna A. Favors</span>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="section-gallery" class="no-top no-bottom" aria-label="section">
-                    <div class="container-fluid">
-                            <div id="gallery" class="row g-0">
-
-                            <div class="col-md-2 item">
-                                <div class="de-image-hover rounded">
-                                    <a href="images/gallery/1.jpg" class="image-popup">                                
-                                        <span class="dih-title-wrap">
-                                            <span class="dih-title">View</span>
-                                        </span>
-                                        <span class="dih-overlay"></span>
-                                        <img src="images/gallery/1.jpg" class="lazy img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-2 item">
-                                <div class="de-image-hover rounded">
-                                    <a href="images/gallery/2.jpg" class="image-popup">                                
-                                        <span class="dih-title-wrap">
-                                            <span class="dih-title">View</span>
-                                        </span>
-                                        <span class="dih-overlay"></span>
-                                        <img src="images/gallery/2.jpg" class="lazy img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-2 item">
-                                <div class="de-image-hover rounded">
-                                    <a href="images/gallery/3.jpg" class="image-popup">                                
-                                        <span class="dih-title-wrap">
-                                            <span class="dih-title">View</span>
-                                        </span>
-                                        <span class="dih-overlay"></span>
-                                        <img src="images/gallery/3.jpg" class="lazy img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-2 item">
-                                <div class="de-image-hover rounded">
-                                    <a href="images/gallery/4.jpg" class="image-popup">                                
-                                        <span class="dih-title-wrap">
-                                            <span class="dih-title">View</span>
-                                        </span>
-                                        <span class="dih-overlay"></span>
-                                        <img src="images/gallery/4.jpg" class="lazy img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-2 item">
-                                <div class="de-image-hover rounded">
-                                    <a href="images/gallery/5.jpg" class="image-popup">                                
-                                        <span class="dih-title-wrap">
-                                            <span class="dih-title">View</span>
-                                        </span>
-                                        <span class="dih-overlay"></span>
-                                        <img src="images/gallery/5.jpg" class="lazy img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-2 item">
-                                <div class="de-image-hover rounded">
-                                    <a href="images/gallery/6.jpg" class="image-popup">                                
-                                        <span class="dih-title-wrap">
-                                            <span class="dih-title">View</span>
-                                        </span>
-                                        <span class="dih-overlay"></span>
-                                        <img src="images/gallery/6.jpg" class="lazy img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </section>
-
-        </div>
-        <!-- content close -->
-        <a href="#" id="back-to-top"></a>
-        <!-- footer begin -->
-        <footer>
-            <div class="subfooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="de-flex">
-                                <div class="de-flex-col">
-                                    <a href="index.html">
-                                        <img alt="" class="f-logo" src="images/logo.png" />
-                                        <span class="copy">&copy; Copyright 2023 - Umenohana</span>
-                                    </a>
-                                </div>
-                                <div class="de-flex-col">
-                                    <div class="social-icons">
-                                        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                                        <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
-                                        <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer close -->
-    </div>
-    
-    <!-- Javascript Files
-    ================================================== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/plugins.min.js"></script>
-    <script src="js/designesia.js"></script>
-</body>
+								</div>
+								<div class="footer-about-social-list">
+									<a href="#"><i class="ti-instagram"></i></a>
+									<a href="#"><i class="ti-youtube"></i></a>
+									<a href="#"><i class="ti-facebook"></i></a>
+									<a href="#"><i class="ti-pinterest"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="footer-bottom-inner">
+								<p class="footer-bottom-copy-right">
+									© Copyright 2024 by <a href="#">Kinnohasu Restaurant</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- jQuery -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/jquery-migrate-3.0.0.min.js"></script>
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/jquery.isotope.v3.0.2.js"></script>
+		<script src="js/pace.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scrollIt.min.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/jquery.magnific-popup.js"></script>
+		<script src="js/YouTubePopUp.js"></script>
+		<script src="js/select2.js"></script>
+		<script src="js/datepicker.js"></script>
+		<script src="js/smooth-scroll.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
 </html>
